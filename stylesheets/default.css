@@ -1,0 +1,93 @@
+html{
+  margin:0;
+  padding:0;
+  top:0;
+  left:0;
+  /*background-image: url("../imgs/nyc-img.jpg");
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  font-family: arial;
+  color : black;
+}
+
+nav:hover{
+  background-color: #4C4C33;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.bg-nyc {
+  background-image: url("../imgs/nyc-img.jpg");
+}
+
+.v-align{
+  position: relative;
+  top: 60%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #FFFFCC;
+}
+
+
+
+
+
+.bg-grey {background-color: #99997A}
+.bg-soap {background-color: #FAFAFA;}
+.bg-dark {background-color: #4C4C33;}
+
+.t-soap {color: #FFFFCC;}
+
+.fl-r {float: right;}
+.fl-l {float: left;}
+.of-h {overflow: hidden;}
+.of-s {overflow: scroll;}
+
+.clearfix {clear: both;}
+.right-fixed {position: fixed; right:2%;}
+.top-fixed {position: fixed; top: 0;}
+.bot-fixed {position: fixed; bottom: 0}
+.bot {bottom: 0;}
+
+.p-xxs {padding: .1em;}
+.p-xs {padding: .3em;}
+.p-sm {padding: .5em;}
+.p-std {padding: 1em;}
+.p-lg {padding: 3em;}
+.p-xl {padding: 4.5em;}
+
+.m-auto {margin: auto;}
+.m-left {margin-right: 10%;}
+.m-right {margin-left: 10%;}
+.m-top {margin-top: 15%;}
+.m-bot {margin-bottom: 15%;}
+.m-nav {margin-left: 2em; margin-right: 2em;}
+.tc-bright-org {}
+
+.width-3 {width: 20%;}
+.width-main {width: 50%;}
+.width-icon {width: 2em;}
+.width-full {width: 100%;}
+
+
+.h-main {height: 60%;}
+.h-head {height: 30%;}
+.h-foot {height: 4.5em;}
+.height-1 {height:3.5em;}
+.height-full {height: 3em;}
+.height-icon {height: 10em;}
+
+.icon {width: 1.5em}
+.ul-none { list-style: none}
