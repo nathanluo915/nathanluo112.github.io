@@ -2,54 +2,52 @@
 <html>
 <head>
   <title>Nathan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../stylesheets/blog-template.css">
 </head>
+
 <body>
-  <img src="#"/>
+
+
   <header>
-    <h1>Nathan's Blog</h1>
+    <nav>
+      <div class="pt-sm">
+        <a href="./index.html" class="ml-std pt-std">Blog</a>
+        <a href="../index.html" class="ml-std pt-std">Site</a>
+      </div>
+    </nav>
+    <div class=" hh">
+      <div class="pos-rel fl-l fz-h fw-b ml-sm mt-sm ">Nathan's Blog</div>
+      <img src="../imgs/blog-icon.png" class="fl-r pos-rel bls-icon">
+    </div>
+
   </header>
-  <nav>
-    <a href="#">Blog Index</a>
-    <a href="#">Site Index</a>
-  </nav>
-  <aside>
-    <ul>
-      <li><a href="#">post 1</a></li>
-      <li><a href="#">post 2</a></li>
-      <li><a href="#">post 3</a></li>
-      <li><a href="#">post 4</a></li>
-      <li><a href="#">post 5</a></li>
-      <li><a href="#">post 6</a></li>
-      <li><a href="#">post 7</a></li>
+  <div class="bg-y">
+    <ul class="postlist">
+      <li class="list-item"><a href="./t1-git-blog.html">Git Basics</a></li>
+      <li class="list-item"><a href="./css-concepts.html">Basics of CSS Positioning</a></li>
+      <li class="list-item"><a href="#">post 3</a></li>
+      <li class="list-item"><a href="#">post 4</a></li>
+      <li class="list-item"><a href="#">post 5</a></li>
+      <li class="list-item"><a href="#">post 6</a></li>
+      <li class="list-item"><a href="#">post 7</a></li>
     </ul>
-  </aside>
 
-  <h1>Title for post</h1>
-  <h2>Date</h2>
+    <div class="content">
+      <p class="title">Title for post
+      <span class="date"><br>Date<span></p>
 
-  <section>
-    <h1>Section 1</h1>
-    <p>
-      section one of blog post one
-      section one of blog post one
-      section one of blog post one
-      section one of blog post one
-      section one of blog post one
-    </p>
-  </section>
+      <p>
+          section one of blog post one
+          section one of blog post one
+          section one of blog post one
+          section one of blog post one
+          section one of blog post one
+      </p>
+    </div>
+  </div>
 
-  <section>
-    <h1>Section 2</h1>
-    <p>
-      section two of blog post one
-      section two of blog post one
-      section two of blog post one
-      section two of blog post one
-      section two of blog post one
-    </p>
-  </secton>
-
-  <footer>
+  <footer class="debug">
     Blog footer
   </footer>
 </body>
