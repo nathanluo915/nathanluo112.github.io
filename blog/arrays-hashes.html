@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Nathan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../stylesheets/blog-template.css">
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <div class="pt-sm">
+        <a href="./index.html" class="ml-std pt-std">Blog</a>
+        <a href="../index.html" class="ml-std pt-std">Site</a>
+      </div>
+    </nav>
+    <div class=" hh">
+      <div class="pos-rel fl-l fz-h fw-b ml-sm mt-sm ">Nathan's Blog</div>
+      <img src="../imgs/blog-icon.png" class="fl-r pos-rel bls-icon">
+    </div>
+
+  </header>
+  <div class="bg-y">
+    <ul class="postlist">
+      <li class="list-item"><a href="./t1-git-blog.html">Git Basics</a></li>
+      <li class="list-item"><a href="./css-concepts.html">Basics of CSS Positioning</a></li>
+      <li class="list-item"><a href="#">post 3</a></li>
+      <li class="list-item"><a href="#">post 4</a></li>
+      <li class="list-item"><a href="#">post 5</a></li>
+      <li class="list-item"><a href="#">post 6</a></li>
+      <li class="list-item"><a href="#">post 7</a></li>
+    </ul>
+
+    <div class="content">
+      <p class="title">Understanding Basic Containers: Arrays and Hashes
+      <span class="date"><br>Sept. 10, 2015<span></p>
+
+      <p>
+          In programming, containers are one of the most fundamental and intuitive structure, because all programs work with data, and data cannot represent themselves, or they become very pointless. Imagine you have a phone book, each name, phone number, zipcode is part of the data, but they don't mean anything by itself. We have to store them in a "phone book" container to relate the names, phone numbers, and zipcodes together to make sense. In this scenario, the phone book is the container containing all the data represented by names, phone numbers and zipcodes in a manner built-in the container itself: a name correlated to a phone number and a zipcode, then the whole phone book is arranged by names in alphebatical orders.
+      </p>
+      <p>
+        In programming, the phone book is a type of container. Their main job is to store data in a meaningful manner. Two of the most basic and straghtforward containers are array and hash.
+      </p>
+      <p>
+        Array is simply a sequence. The content of the sequence doesn't matter much, though in practice we should try to keep the type of the content consistent. Putting an apple after a truck and followed by a piece of paper makes very little sence, even though they are in a sequence. Just like phone books emphasize the idea of name to number, zipcode relationship, array emphasize the relationship of sequence. Thus you can access the content of an array using index.
+      </p>
+      <p>
+        Hash is more like a phone. In some programming languages, hash is also called a dictionary. This is a clearer description of this type of container in my opinion. It is a key-value pair table with no emphasis on sequence. The key in the table is unique, meaning it doesn't allow duplicate key in the table, but it doesn't care about the value paired up with the specific key. In the phone book scenario, you can have Katelyn with a zipcode 91234, and Tom with the sampe zipcode 91234. But when there are two Katelyn's in the phone book, it can be quite confusing. Here the people's name are the "keys" in hash and the phone numbers and zipcodes are the "values". To find the person's phone number and zipcode, you would look for the person's name first, which is very similar to accessing the content of the hash. You will use the "keys" to look for the "value" of the key.
+      </p>
+      <p>
+        These two types of containers can be nested together to accomplish a lot of different tasks. Thats leave to you and me to explore.
+      </p>
+    </div>
+  </div>
+
+  <footer class="debug">
+    Blog footer
+  </footer>
+</body>
+
+</html>
+
+<!--
+*How was it to wireframe and create an HTML page with a pair
+  It was very pleasant to work through this section with a pair. I can learn from my pair's thought process and re-evaluate my original design. While writing up the HTML, we collaborate on the syntax and conventions since we have the wireframes as the building block already. In time there is some misunderstanding and disagreement, but all of them are resolved as we research and discuss in detail.
+
+*Did you find wireframing to be helpful to your development process?
+  Wireframing is very helpful since we have a building block to work on the HTML file. It clearly outline the structure of the HTML file to speed up the implementation process. Without it would be very hard to implement the page, and it would be impossible to work without it in some more complex web pages.
+
+*What did you and your pair decide make a good wireframe?
+  We are trying to keep it simple and clear. Since we don't have much formatting skills yet, we can only focus on the strutual apparence. With a simple and clear wireframe, we can struture the content in a more systematic manner.
+
+*What new semantic element did you learn about (if any)?
+  I learnt about the aside and nav tag. Aside tag will be used on the list for quick post navigation on the side. Nav tag is simply a navigation bar on top of the page for links to different pages.
+
+  -->
