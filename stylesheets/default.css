@@ -15,6 +15,17 @@ html{
 .hover:hover{
   background-color: #4C4C4C;
 }
+
+a + ul {visibility: hidden;}
+a:hover + ul {
+  visibility: visible;
+  -webkit-transiton: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -transition: opacity 0.3s;
+}
+ul:hover {visibility: visible}
 nav {
   margin: 0;
 }
@@ -55,6 +66,7 @@ a:link, a:visited {
 .b-shadow {box-shadow: 0 0 50px 0 rgba(0,0,0,0.25);}
 
 
+
 .bg-grey {background-color: #99997A}
 .bg-soap {background-color: #FAFAFA;}
 .bg-dark {background-color: #4C4C33;}
@@ -85,7 +97,7 @@ a:link, a:visited {
 .p-l-std {padding-left: 1.5em;}
 .p-t-std {padding-top: 1em;}
 
-.m-none
+.m-none {margin: 0;}
 .m-auto {margin: auto;}
 .m-t-std {margin-top: 1em;}
 .m-left {margin-right: 10%;}
@@ -94,6 +106,7 @@ a:link, a:visited {
 .m-bot {margin-bottom: 15%;}
 .m-nav {margin-left: 2em; margin-right: 2em;}
 .nav-ele {padding-left: .25em; padding-right:.25em; padding-top: .9em; padding-bottom: .95em; text-align: center;}
+.nav-sub-ele {padding-left: .25em; padding-right:.25em; padding-top: .9em; padding-bottom: .95em;}
 
 .width-3 {width: 5em;}
 .width-20pc {width: 20%;}
