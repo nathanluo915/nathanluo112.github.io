@@ -106,7 +106,7 @@ a:link, a:visited {
 .m-bot {margin-bottom: 15%;}
 .m-nav {margin-left: 2em; margin-right: 2em;}
 .nav-ele {padding-left: .25em; padding-right:.25em; padding-top: .9em; padding-bottom: .95em; text-align: center;}
-.nav-sub-ele {padding-left: .25em; padding-right:.25em; padding-top: .9em; padding-bottom: .95em;}
+.nav-sub-ele {padding-left: .25em; padding-right:.25em; padding-top: .5em; padding-bottom: .5em;}
 
 .width-3 {width: 5em;}
 .width-20pc {width: 20%;}
