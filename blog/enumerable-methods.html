@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Nathan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../stylesheets/blog-template.css">
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <div class="pt-sm">
+        <a href="./index.html" class="ml-std pt-std">Blog</a>
+        <a href="../index.html" class="ml-std pt-std">Site</a>
+      </div>
+    </nav>
+    <div class=" hh">
+      <div class="pos-rel fl-l fz-h fw-b ml-sm mt-sm ">Nathan's Blog</div>
+      <img src="../imgs/blog-icon.png" class="fl-r pos-rel bls-icon">
+    </div>
+
+  </header>
+  <div class="bg-y">
+    <ul class="postlist">
+      <li class="list-item"><a href="./t1-git-blog.html">Git Basics</a></li>
+      <li class="list-item"><a href="./css-concepts.html">Basics of CSS Positioning</a></li>
+      <li class="list-item"><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+      <li class="list-item"><a href="#">post 4</a></li>
+      <li class="list-item"><a href="#">post 5</a></li>
+      <li class="list-item"><a href="#">post 6</a></li>
+      <li class="list-item"><a href="#">post 7</a></li>
+    </ul>
+
+    <div class="content">
+      <p class="title">The .cycle Enumerable
+      <span class="date"><br>Sept. 17 2015<span></p>
+
+      <p>
+        Ruby enumerable provides us a lot of elegant way to access, modify, create data structures we need. They can shorten the code a lot if used right.
+
+        I came accross this <span class="highlight">.cycle</span> enumerable immediately drawn by its interesting behavior. It seems there is not much documentation in the Ruby docs. After doing some research, I think I would be good to put the behavior of this Enumerable in my own word, as I have seen this structure in other languages.
+      </p>
+      <p>
+        This is the description from the docs:
+        <div class="quote-block">
+          <span class="quote-head">cycle(n=nil) { |obj| block }
+          <br>cycle(n=nil) → an_enumerator</span>
+          <span><br><br>
+            Calls block for each element of enum repeatedly n times or forever if none or nil is given. If a non-positive number is given or the collection is empty, does nothing. Returns nil if the loop has finished without getting interrupted.
+
+            <br><br>#cycle saves elements in an internal array so changes to enum after the first pass have no effect.
+
+            <br><br>If no block is given, an enumerator is returned instead.
+          </span>
+          <p class = "code-block">
+            a = ["a", "b", "c"]
+            <br>a.cycle { |x| puts x } <span class = "ruby-comment"> # print, a, b, c, a, b, c,.. forever.</span>
+            <br>a.cycle(2) { |x| puts x } <span class = "ruby-comment"> # print, a, b, c, a, b, c.<span>
+          </p>
+        </div>
+      </p>
+
+      <p>
+        At first it might be a little bit confusing. To better understand <span class="highlight">.cycle</span>, I would use the concept of circular array to better describe the enumerable's behavior.
+        <img src="../imgs/circular_array.jpg" class ="inline-img"/>
+      </p>
+      <p>
+        As shown in the image, we have two figures, a rectangle block representing a normal array, and a circular block representing the circular array. What the <span class="highlight">.cycle</span> does is take the original array and connect its end to its beginning to create a loop, a cycle, thus the name cycle for this enumerable.
+        In the example, the parameter for the enumerable indicate how many copy of the original array it will contain, which is 2 in the case of the Ruby docs.
+      </p>
+
+
+    </div>
+  </div>
+
+  <footer class="debug ">
+    Blog footer
+  </footer>
+</body>
+
+</html>
