@@ -12,9 +12,20 @@ html{
   color : black;
 }
 
-.hover:hover{
-  background-color: #4C4C4C;
+
+body{
+  margin: 0;
+  padding: 0;
 }
+
+header{
+  margin:0;
+}
+
+p {
+  line-height: 150%
+}
+
 
 a + ul {visibility: hidden;}
 a:hover + ul {
@@ -26,23 +37,14 @@ a:hover + ul {
   -transition: opacity 0.3s;
 }
 ul:hover {visibility: visible}
+a:link, a:visited {
+  text-decoration: none;
+  color: #CCCCCC;
+}
 nav {
   margin: 0;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-}
-
-header{
-  margin:0;
-}
-
-a {
-  display: block;
-  width: 100%;
-}
 
 .debug {
   border: 0px solid red;
@@ -57,17 +59,10 @@ a {
   top: 60%;
 }
 
-a:link, a:visited {
-  text-decoration: none;
-  color: #CCCCCC;
-}
-
-p {
-  line-height: 150%
-}
-
 .b-shadow {box-shadow: 0 0 50px 0 rgba(0,0,0,0.25);}
-
+.hover:hover{
+  background-color: #4C4C4C;
+}
 
 
 .bg-grey {background-color: #99997A}
@@ -107,8 +102,8 @@ p {
 .m-right {margin-left: 10%;}
 .m-top {margin-top: 15%;}
 .m-bot {margin-bottom: 15%;}
-.m-nav {margin-left: 2em; margin-right: 2em;}
-.nav-ele {padding-left: .25em; padding-right:.25em; padding-top: .9em; padding-bottom: .95em; text-align: center;}
+.m-nav {margin-left: 1em; margin-right: 1em;}
+.nav-ele {padding-left: .5em; padding-right:.5em; padding-top: .9em; padding-bottom: .95em; text-align: center;}
 .nav-sub-ele {padding-left: .25em; padding-right:.25em; padding-top: .5em; padding-bottom: .5em;}
 
 .width-3 {width: 5em;}
