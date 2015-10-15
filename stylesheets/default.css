@@ -3,7 +3,6 @@ html{
   padding:0;
   top:0;
   left:0;
-  background-image: url("../imgs/nyc-img.jpg");
   webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,6 +13,7 @@ html{
 
 
 body{
+  background-image: url("../imgs/nyc-img.jpg");
   margin: 0;
   padding: 0;
 }
@@ -36,10 +36,12 @@ a:hover + ul {
   -o-transition: opacity 0.3s;
   -transition: opacity 0.3s;
 }
-ul:hover {visibility: visible}
-a:link, a:visited {
-  text-decoration: none;
-  color: #CCCCCC;
+ul:hover {
+  visibility: visible;
+  z-index: -1;
+}
+a, a:hover {
+ color: #CCCCCC;
 }
 
 nav {
@@ -60,9 +62,12 @@ nav {
   top: 60%;
 }
 
+
+
 .b-shadow {box-shadow: 0 0 50px 0 rgba(0,0,0,0.25);}
 .hover:hover{
   background-color: #4C4C4C;
+  text-decoration: none;
 }
 
 
@@ -102,7 +107,7 @@ nav {
 .m-left {margin-right: 10%;}
 .m-right {margin-left: 10%;}
 .m-top {margin-top: 15%;}
-.m-bot {margin-bottom: 15%;}
+.m-bot {margin-bottom: 10%;}
 .m-nav {margin-left: 1em; margin-right: 1em;}
 .nav-ele {padding-left: .5em; padding-right:.5em; padding-top: .9em; padding-bottom: .95em; text-align: center;}
 .nav-sub-ele {padding-left: .25em; padding-right:.25em; padding-top: .5em; padding-bottom: .5em;}
@@ -116,8 +121,8 @@ nav {
 
 
 
-.h-main {height: 27em;}
-.h-sub {height: 8em;}
+.h-main {height: 33em;}
+.h-sub {height: 10em;}
 .h-5 {height: 5em;}
 .h-2 {height:2.5em;}
 .h-head {height: 30%;}

@@ -2,21 +2,36 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
   <link type="text/css" rel="stylesheet" href="./stylesheets/default.css">
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+  $(function(){
+    $("#nav").load("nav.html");
+  });
+  </script>
   <title>DBC in NYC</title>
 </head>
 <body>
-  <header class="width-full h-head fl-l">
-    <nav class="width-full height-3 bg-darker debug">
+  <header class="width-full h-head">
+    <div id="nav" class="width-full height-3 bg-darker debug">
       <div class="fl-l m-nav height-full debug">
-        <div class="fl-l m-nav"><a href="index.html" class="fl-l height-full nav-ele hover debug">Site</a></div>
-        <div class="fl-l m-nav"><a href="./blog/index.html" class="fl-l height-full nav-ele hover debug">Blog</a></div>
-        <div class="fl-l m-nav"><a href="./projects/index.html" class="fl-l height-full nav-ele hover debug">Projects</a></div>
+        <div class="fl-l m-nav height-3"><a href="index.html" class="fl-l height-full nav-ele hover debug">Site</a></div>
+        <div class="fl-l m-nav height-3"><a href="./blog/index.html" class="fl-l height-full nav-ele hover debug">Blog</a></div>
+        <div class="fl-l m-nav height-3"><a href="./projects/index.html" class="fl-l height-full nav-ele hover debug">Projects</a></div>
       </div>
       <div class="fl-r m-nav height-full debug">
-        <div class="fl-l m-nav"><a href="about.html" class="fl-l height-full nav-ele hover debug">About Me</a></div>
+        <div class="fl-l m-nav height-3"><a href="about.html" class="fl-l height-full nav-ele hover debug">About Me</a></div>
 
-        <div class="fl-l m-nav"><a href="#" class="fl-l height-full nav-ele hover debug">Contact</a>
+        <div class="fl-l m-nav height-3"><a href="#" class="fl-l height-full nav-ele hover debug">Contact</a>
           <ul class="ul-none width-full m-none p-none">
             <li><a href="mailto:naipton@gmail.com?subject=Contact from site" class="fl-l height-full nav-sub-ele hover debug">Email Me</a></li>
             <li><a href="#" class="fl-l height-full nav-sub-ele hover debug">Facebook</a></li>
@@ -26,37 +41,40 @@
           </ul>
         </div>
 
-        <div class="fl-l m-nav"><a href="#" class="fl-l height-full nav-ele hover debug">Resume</a></div>
+        <div class="fl-l m-nav height-3"><a href="#" class="fl-l height-full nav-ele hover debug">Resume</a></div>
       </div>
-    </nav>
+    </div>
 
-    <div class="p-lg text-bright">
+    <div class="p-lg text-bright debug">
       <h1>DBC in NYC</h1>
-      <h3>A snapshot for first time NYC visitor</h3>
+      <h4>A snapshot for first time NYC visitor</h4>
+    </div>
+  </div>
+
+</header>
+
+
+<main class="container-fluid">
+  <section class="row">
+    <div class="col-sm-8">
+      <div  class="p-lg m-bot h-main bg-darker-trans text-bright b-shadow">
+        <h2>Welcome to DBC in NYC</h2>
+        <p>
+          Comments will be added after onsite portion.
+        </p>
+      </div>
     </div>
 
-  </header>
-
-
-<main>
-  <section class="m-auto">
-    <div  class="p-lg m-right h-main width-main fl-l bg-darker-trans text-bright m-t-std b-shadow">
-      <h2>Welcome to DBC in NYC</h2>
-      <p>
-        Comments will be added after onsite portion.
-      </p>
-    </div>
-
-    <div class=" width-20pc fl-l p-l-std p-t-std">
+    <div class="col-sm-3">
       <article class="m-bot h-sub p-sm bg-darker-trans text-bright b-shadow">
         <h3>DBC Insight</h3>
         <p>(Brief Intro)</p>
       </article>
-      <article class="m-top m-bot p-sm bg-darker-trans text-bright h-sub b-shadow">
+      <article class=" m-bot p-sm bg-darker-trans text-bright h-sub b-shadow">
         <h3>NYC 101</h3>
         <p>(Brief Intro)</p>
       </article>
-      <article class="m-top m-bot p-sm h-sub bg-darker-trans text-bright b-shadow">
+      <article class="m-bot p-sm h-sub bg-darker-trans text-bright b-shadow">
         <h3>Life in NYC</h3>
         <p>(Brief Intro)</p>
       </article>
