@@ -1,20 +1,46 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
 <head>
-  <title>Your page title here</title>
+  <title>Nathan's Blog</title>
   <meta charset="UTF-8">
-  <link type="text/css" rel="stylesheet" href="./stylesheets/default.css">
+  <link rel="stylesheet" href="../stylesheets/blog-template.css">
 </head>
 
-<main>
-  <h1>Nathan's First Day Git</h1>
-  <h2>First Impression of Git and Version Control</h2>
-  <h4>8/20/2015</h4>
+<body>
 
-  <section>
-    <p>
-      Git  have always been a really fancy word for me. The main reason being I have no idea what it actually means, nor I ever had the urge to learn about it. Everything changes as I start a developer course at DevBootcamp. First thing I was taught in this bootcamp is the importance of version control and then Git along with GitHub.
-    </p>
-    <p>
+
+  <header>
+    <nav>
+      <div class="pt-sm">
+        <a href="./index.html" class="ml-std pt-std">Blog</a>
+        <a href="../index.html" class="ml-std pt-std">Site</a>
+      </div>
+    </nav>
+    <div class=" hh">
+      <div class="pos-rel fl-l fz-h fw-b ml-sm mt-sm ">Nathan's Blog</div>
+      <img src="../imgs/blog-icon.png" class="fl-r pos-rel bls-icon">
+    </div>
+
+  </header>
+  <div class="bg-y">
+    <ul class="postlist">
+      <li class="list-item"><a href="./t1-git-blog.html">Git Basics</a></li>
+      <li class="list-item"><a href="./css-concepts.html">Basics of CSS Positioning</a></li>
+      <li class="list-item"><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+      <li class="list-item"><a href="#">post 4</a></li>
+      <li class="list-item"><a href="#">post 5</a></li>
+      <li class="list-item"><a href="#">post 6</a></li>
+      <li class="list-item"><a href="#">post 7</a></li>
+    </ul>
+
+    <div class="content">
+      <p class="title">Git Basics
+      <span class="date"><br>8/20/2015<span></p>
+
+      <p>
+        Git  have always been a really fancy word for me. The main reason being I have no idea what it actually means, nor I ever had the urge to learn about it. Everything changes as I start a developer course at DevBootcamp. First thing I was taught in this bootcamp is the importance of version control and then Git along with GitHub.
+      </p>
+      <p>
         Version control, instead of what how the general idea perceive that being the action of controlling the published version or systematically naming the version, in the developer's perspective, it is a practice with a much more micro scale. It is actually an idea of monitoring change of the project. Each change of the project is a new version: file content edition, file addition, removal, or peripheral addition and removal. This kind of concept becomes more important as the scale of the project as well as the collaboration increases. When there are multiple developers working on the same project, which is the general scenario, tracking changes is so vital in order to have a clean, efficient collabration environment. This is where Git comes in.
     </p>
     <p>
@@ -23,8 +49,12 @@
     <p>
         Then what is GitHub? Consider the difference between a flashdrive and Dropbox. Both of them are ways for storage, while one is your physical local drive and the other one is an online storage drive. This is a very similar scenario with Git and GitHub. Git store all of the data/project in your local machine, while GitHub is an online host. The advantage of GitHub is very clear: as long as you have Internet, you can download the complete project and collaborate on the project whenever or wherever. Of coures there are lots of details and technique of using Git and GitHub but this is the general idea.
     </p>
+    </div>
+  </div>
 
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
+  <footer class="debug ">
+    Blog footer
+  </footer>
+</body>
 
+</html>
