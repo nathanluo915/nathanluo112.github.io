@@ -2,21 +2,33 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
   <link type="text/css" rel="stylesheet" href="./stylesheets/default.css">
-  <title>DBC in NYC -- About Me</title>
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="jsmodules/default.js"></script>
+  <title>DBC in NYC</title>
 </head>
 <body>
-  <header>
+  <header class="width-full h-head">
     <nav class="width-full height-3 bg-darker debug">
       <div class="fl-l m-nav height-full debug">
-        <div class="fl-l m-nav debug"><a href="index.html" class="fl-l height-full nav-ele hover debug">Site</a></div>
-        <div class="fl-l"><a href="./blog/index.html" class="fl-l height-full nav-ele hover debug">Blog</a></div>
+        <div class="fl-l m-nav height-3"><a href="index.html" class="fl-l height-full nav-ele hover debug">Site</a></div>
+        <div class="fl-l m-nav height-3"><a href="./blog/index.html" class="fl-l height-full nav-ele hover debug">Blog</a></div>
+        <div class="fl-l m-nav height-3"><a href="./projects/index.html" class="fl-l height-full nav-ele hover debug">Projects</a></div>
       </div>
       <div class="fl-r m-nav height-full debug">
-        <div class="fl-l m-nav"><a href="about.html" class="fl-l height-full nav-ele hover debug">About Me</a></div>
+        <div class="fl-l m-nav height-3"><a href="about.html" class="fl-l height-full nav-ele hover debug">About Me</a></div>
 
-        <div class="fl-l m-nav"><a href="#" class="fl-l height-full nav-ele hover debug">Contact</a>
-          <ul class="ul-none width-full m-none p-none">
+        <div class="fl-l m-nav height-3"><a href="#" class="fl-l height-full nav-ele hover debug">Contact</a>
+          <ul class="ul-none width-sub-list m-none p-none">
             <li><a href="mailto:naipton@gmail.com?subject=Contact from site" class="fl-l height-full nav-sub-ele hover debug">Email Me</a></li>
             <li><a href="#" class="fl-l height-full nav-sub-ele hover debug">Facebook</a></li>
             <li><a href="#" class="fl-l height-full nav-sub-ele hover debug">Twitter</a></li>
@@ -25,40 +37,43 @@
           </ul>
         </div>
 
-        <div class="fl-l m-nav"><a href="#" class="fl-l height-full nav-ele hover debug">Resume</a></div>
+        <div class="fl-l m-nav height-3"><a href="#" class="fl-l height-full nav-ele hover debug">Resume</a></div>
       </div>
     </nav>
-    <div class="p-lg text-bright">
+
+    <div class="p-lg text-bright debug">
       <h1>About Me</h1>
+      <h4></h4>
     </div>
-
-
   </header>
-  <main>
-    <section class="m-auto">
-      <div  class="p-lg m-auto h-main width-65-p bg-darker-trans text-bright m-t-std b-shadow">
+  <main class="container">
+    <section class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-8 p-lg m-auto bg-orange text-dark-brown m-t-std b-shadow">
         <p>
-          My hometown is Guangzhou, China, a beautiful city with a thousand years of history. I have always been proud of my city for its scene, its people, and its culture. I came to Columbus Ohio in 2008. The quiet and peaceful atmosphere captured me in a blink. Soon after, I started my college education in Ohio State University. That's the most enlightening experience I have throughout my life. The spark of ideas, the urge of creation all rushed in as I moved forward gradually, and the feeling of freedom that I had never experience before planted a seed which lead me here today.
-        </p>
-        <p>
-          I majored in Computer Engineering, specifying DSP and low level programming. Though because of my identity (not citizen), it's a bit hard to look for a job at that field. Eventually I started working with one of the alumni and manage the US warehouse for the company. That's one of the most intense and exciting experience I've ever had. Processing line design, budgeting, system maintenance, infrastructre construction, HR, internal-external communication, etc. All those tasks came in a so compact manner that in one way stressed me a lot, but in another way gave me so much knowledge in a very short time. I am very thankful for that experience.
+          My hometown is Guangzhou, China, a beautiful city with thousands of years of history. I have always been proud of my city for its scene, its people, its culture. I came to Columbus Ohio in 2008. The quiet and peaceful atmosphere captured me in a blink. Soon after, I started my college education in Ohio State University. That's the most enlightening experience I have had. The sparks of ideas, the urge of creation all rushed in as I moved forward gradually, and the feeling of freedom that I had never experience before planted a seed which lead me here today.
         </p>
         <p>
           I am always a fan of comedy. Any kind of comedy shows will catch my eyes. Among all of them, the Daily Show is the one that gives me the most thoughts on the society and the culture. Also watching stand-up comedy show is one of my favourite event. I should go to a live show someday.
         </p>
         <p>
-          Video game is also one my passions. Though I was too lazy to play the game myself. I spend more time on watching other's playthrough than actually playing it. It is always very exciting to experience different worlds and stories.
+          I started my professional career working with one of the alumni and manage the US warehouse for the company. That's one of the most intense and exciting experience I've ever had. Logistics, processing line design, budgeting, system maintenance, infrastructre construction, HR, internal-external communication, taxing, company law, etc. All those tasks came in a so compact manner that in one way stressed me a lot, but in another way gave me so much knowledge in a very short time.
         </p>
         <p>
-
+          Of all the new things I have learned, my favorite topic is resource management. I spent a long time on our still-in-development ERP. The amount of data and resources are so immense but lacking utility. The gradually improving ERP helped to monitor, save, and analyze different kinds of resource for better efficiency. Since the growth of our company is about 70% per year, the company is in constantly needs of new procedure and development projects. As a result our ERP needs constant updates on different modules to expand its capability. I had countless challenges and exciting moments when designing and implementing the physical procedure and transfer the procedure to the ERP.
         </p>
+        <p>
+          This kind of excitement is exactly what I was looking for. I am looking for skills to build something that can help us as a whole. So here I am in the NYC campus of Dev Bootcamp.
+        </p>
+
+
       </div>
 
     </section>
 
   </main>
 
-  <footer class="m-auto width-full p-std h-5 text-bright text-aln-cen clearfix">
+  <footer class="m-auto width-full p-std h-5 text-aln-cen clearfix">
     <p>Footer content (copyright, disclaimer, etc.)</p>
 
   </footer>
