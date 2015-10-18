@@ -36,10 +36,39 @@
     <div class="content">
       <p class="title">SQL Injection
       <span class="date"><br>Oct. 12<span></p>
+      <p>
+        I used to be amazed by hackers. We can constantly hear some news about a large firm was hacked and hundreds of thousands of its customers' personal data are stolen. It seems like they are a step ahead of the company's developer. It would be great if they can use the skill for good.
+      </p>
+      <p>
+        Turns out that's not quite all about skills.
+      </p>
+      <p>
+        Let's talk about SQL injection. So most of the data of a company will be stored in the form of database, using SQL statements to access the data.
+      </p>
+      <p>
+        For example, this company has a website that allows user to use their username and password to log in to their account. Then there is this two input block for you to put in your username and password. In most cases, after you input your information in these two blocks, the website will use these content as part of the SQL command to bring up your account from the database. Bascially, the inputs will be added into a query, then the database server will use this query to match your username and password using the simple equal statement to bring up your account. If either one of these two pieces of information does not match, then the database server will not return much information other than "Your username or password is incorrect".
+      </p>
 
       <p>
+        For example:
       </p>
+      <script src="https://gist.github.com/nathanluo112/a110218f40df182c4a3d.js"></script>
+      <p>
+        So if the <em>Username</em> and <em>Password</em> matches one of the records in the <em>user</em> database, the boolean statements above will be TRUE, then server return that specific record. Let's say if we have a username "SQLinjection" with the password "123456", the server will check each record until it gets to the record with username "SQLinjection" (which making first boolean statement TRUE) then see if the password is "123456" (making the 2nd boolean statement TRUE).
+      </p>
+      <script src="https://gist.github.com/nathanluo112/eec6ac97b0fd11c8fbf3.js"></script>
+      <p>
+        Assumming both of the statements are TRUE, the server will return the record it found. But what if the statements are always TRUE? The server will undoubtfully return all of the records. So if the username is "abcde' OR '0=0" with the password "abcde' OR '0=0", the query becomes:
+      </p>
+      <script src="https://gist.github.com/nathanluo112/afba9f177e2862bdc996.js"></script>
+      <p>There, we get an always TRUE statement (OR with TRUE will make the whole statement TRUE). So the database will return all the record. Great.
+      </p>
+      <p>
+        There are ways to prevent that: better type check, limiting input character sets, etc. Can't wait to get into database in my class!
+      </p>
+
     </div>
+
   </div>
 
   <footer class="debug ">
