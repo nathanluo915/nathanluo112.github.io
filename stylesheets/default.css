@@ -14,6 +14,7 @@ html{
 
 body{
 
+  background-color: #E6E6E6;
   margin: 0;
   padding: 0;
 }
@@ -104,6 +105,7 @@ nav {
 .p-lg {padding: 3em;}
 .p-xl {padding: 4.5em;}
 .p-l-std {padding-left: 1.5em;}
+.p-l-sm {padding-left: 1em;}
 .p-t-std {padding-top: 1em;}
 
 .m-none {margin: 0;}
