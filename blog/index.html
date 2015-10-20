@@ -2,34 +2,128 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link type="text/css" rel="stylesheet" href="./stylesheets/default.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog_index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../jsmodules/blog_menu.js"></script>
   <TITLE>Nathan's Blog</TITLE>
 
 </head>
 <body>
-  <header>
-    <div>
+  <header class="width-full h-head">
+    <nav class="width-full height-3 bg-darker debug">
+      <div class="fl-l m-nav height-full debug">
+        <div class="fl-l m-nav height-3"><a href="../index.html" class="fl-l height-full nav-ele hover debug">Site</a></div>
+        <div class="fl-l m-nav height-3"><a href="index.html" class="fl-l height-full nav-ele hover debug">Blog</a></div>
+        <div class="fl-l m-nav height-3"><a href="../projects/index.html" class="fl-l height-full nav-ele hover debug">Projects</a></div>
+      </div>
+      <div class="fl-r m-nav height-full debug">
+        <div class="fl-l m-nav height-3"><a href="./about.html" class="fl-l height-full nav-ele hover debug">About Me</a></div>
+
+        <div class="fl-l m-nav height-3"><a href="#" class="fl-l height-full nav-ele hover debug">Contact</a>
+          <ul class="ul-none width-sub-list m-none p-none">
+            <li><a href="mailto:naipton@gmail.com?subject=Contact from site" class="fl-l height-full nav-sub-ele hover debug">Email Me</a></li>
+            <li><a href="#" class="fl-l height-full nav-sub-ele hover debug">Facebook</a></li>
+            <li><a href="#" class="fl-l height-full nav-sub-ele hover debug">Twitter</a></li>
+            <li><a href="#" class="fl-l height-full nav-sub-ele hover debug">GitHub</a></li>
+            <li><a href="#" class="fl-l height-full nav-sub-ele hover debug">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="fl-l m-nav height-3"><a href="#" class="fl-l height-full nav-ele hover debug">Resume</a></div>
+      </div>
+    </nav>
+
+    <div class="p-lg text-bright debug">
       <h1>Nathan's Blog</h1>
+      <h4></h4>
     </div>
   </header>
-  <table>
-    <tr><td><a href="t1-git-blog.html">Git and GitHub</a></td></tr>
-    <tr><td><a href="css-concepts.html">Basics of CSS Positioning</a></td></tr>
-    <tr><td><a href="arrays-hashes.html">Arrays and Hashes</a></td></tr>
-    <tr><td><a href="#">blog 4</a></td></tr>
-    <tr><td><a href="JavaScript.html">Ruby Hash vs. JavaScript Object</a></td></tr>
-    <tr><td><a href="#">blog 6</a></td></tr>
-    <tr><td><a href="#">blog 7</a></td></tr>
-  </table>
 
-  <table>
-    <tr><td><a href="#">August 2015</a></td></tr>
-    <tr><td><a href="#">September 2015</a></td></tr>
-    <tr><td><a href="#">October 2015</a></td></tr>
-    <tr><td><a href="#">November 2015</a></td></tr>
-    <tr><td><a href="#">December 2015</a></td></tr>
-    <tr><td><a href="#">January 2016</a></td></tr>
-  </table>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-xm-1"></div> -->
+      <div class="col-xm-8">
+        <div class="menu-item debug">
+          Git Basics
+          <div class="inner-item debug">
+            <p class="debug"><a href="t1-git-blog.html" class="debug">An overview of Git, GitHub and the concept of version control</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- <div class="col-xm-1"></div> -->
+      <div class="col-xm-8">
+        <div class="menu-item debug">
+          CSS Positioning
+          <div class="inner-item debug">
+            <p class="debug"><a href="css-concepts.html" class="debug">We will be looking into some block positioning using generic CSS</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xm-1"></div>
+      <div class="col-xm-8">
+        <div class="menu-item debug">
+          Arrays and Hashes
+          <div class="inner-item debug">
+            <p class="debug"><a href="arrays-hashes.html" class="debug">Let's talk about two of the most basic and important containers in programming</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xm-1"></div>
+      <div class="col-xm-8">
+        <div class="menu-item debug">
+          Online Security
+          <div class="inner-item debug">
+            <p class="debug"><a href="online-security.html" class="debug">A little side research about online security for general customers using "smart" devices</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-xm-1"></div>
+      <div class="col-xm-8">
+        <div class="menu-item debug">
+          The .cycle Enumerable
+          <div class="inner-item debug">
+            <p class="debug"><a href="enumerable-methods.html" class="debug">A brief explanation about the .cycle enumerable (circular array)</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xm-1"></div>
+      <div class="col-xm-8">
+        <div class="menu-item debug">
+          Ruby Hash vs JavaScript Object
+          <div class="inner-item debug">
+            <p class="debug"><a href="JavaScript.html" class="debug">A detailed comparison between the two similar structured container/concept</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
