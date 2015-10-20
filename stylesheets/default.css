@@ -44,6 +44,7 @@ ul:hover {
 }
 a, a:hover {
  color: #CCCCCC;
+ text-decoration: none;
 }
 
 nav {
@@ -140,7 +141,6 @@ nav {
 .resultitem{
   opacity: 0.7;
   -webkit-transition: 0.5s ease-in;
-
 }
 
 .resultitem:hover{
@@ -153,34 +153,3 @@ nav {
   transition: all 1s ease;
 }
 
-/*.test {
-    background: #2e9ec7;
-    color: #fff;
-    margin: 0 auto;
-    padding: 100px 0;
-    -webkit-transition: -webkit-border-radius 0.5s ease-in;
-    -moz-transition: -moz-border-radius 0.5s ease-in;
-    -o-transition: border-radius 0.5s ease-in;
-    -ms-transition: border-radius 0.5s ease-in;
-    transition: border-radius 0.5s ease-in;
-    text-align: center;
-    width: 200px;
-}
-
-
-.test:hover {
-    background: #2fa832;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    -webkit-transform: rotate(720deg);
-    -moz-transform: rotate(720deg);
-    -o-transform: rotate(720deg);
-    -ms-transform: rotate(720deg);
-    transform: rotate(720deg);
-}*/
