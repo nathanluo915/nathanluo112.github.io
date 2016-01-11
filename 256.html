@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html ng-app="gameModule">
+<head>
+  <meta charset="UTF-8">
+  <title>256</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/css/app.css">
+  <script type="text/javascript" src="./jsmodules/js/vendors/jQuery.min.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/vendors/angular.min.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/vendors/underscore.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/vendors/mousetrap.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/app.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/directives.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/services/boardService.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/services/gameService.js"></script>
+  <script type="text/javascript" src="./jsmodules//js/gameController.js"></script>
+
+</head>
+<body>
+  <div ng-controller="gameController">
+    <button ng-click="newGame()">New Game</button>
+    <table>
+      <tr class="row" ng-repeat="row in gameRows track by $index">
+        <td ng-repeat="item in row track by $index">
+          <tile></tile>
+          <!-- <div class="tile">
+            <div ng-if="item != 0">{{item}}</div>
+          </div> -->
+        </td>
+      </tr>
+    </table>
+    <!-- <div grid="name"></div> -->
+
+  </div>
+
+</body>
+</html>
