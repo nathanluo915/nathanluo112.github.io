@@ -1,0 +1,10 @@
+.fl {float: left;}
+ul {list-style-type: none;}
+
+.tile{
+  height: 5vh;
+  width: 5vh;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1em;
+}
